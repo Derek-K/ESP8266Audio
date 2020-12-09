@@ -178,7 +178,7 @@ bool WebReadRequest(WiFiClient *client, char *reqBuff, int reqBuffLen, char **ur
   char *url;
   char *qp;
   if (!memcmp_P(reqBuff, PSTR("GET "), 4)) {
-    client->flush(); // Don't need anything here...
+    //client->flush(); // Don't need anything here...
     
     // Break into URL and form data
     url = reqBuff+4;
